@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   root to: 'pages#home'
 
 
-  #Match Routes
+  # Match Routes
   match 'about', to: 'pages#about', via: 'get'
   match 'home', to: 'pages#home', via: 'get'
   match 'support', to: 'pages#support', via: 'get'
@@ -19,6 +19,6 @@ Rails.application.routes.draw do
   match 'errors', to: 'pages#errors', via: 'get'
 
 
-  # Catch All Errors Routes
+  # Catch All Errors Route
   get '*path', to: redirect('/errors')
 end
