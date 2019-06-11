@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
 
   # RESTful Routes Generators
-
+  resources :answers
 
 
   # Root Route
