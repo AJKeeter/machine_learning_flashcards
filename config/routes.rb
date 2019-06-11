@@ -1,10 +1,12 @@
 Rails.application.routes.draw do
 
+
   # Custom Devise Routes
 
 
   # RESTful Routes Generators
   resources :answers
+  resources :questions
 
 
   # Root Route
